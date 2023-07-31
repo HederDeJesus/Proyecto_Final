@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+#main-menu {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    position: fixed; /* Cambiamos la posición del menú a fijo para que no afecte el contenido */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Aseguramos que el menú esté por encima de otros elementos */
+}
+
+#menu-area ul {
+    list-style: none;
+}
+
+#menu-area li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+#menu-area li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu-area li a:hover {
+    color: #ff9900;
+}
+
+.submenu-1 {
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+#menu-area li:hover .submenu-1 {
+    display: block;
+}
+
+.submenu-1 li {
+    padding: 5px;
+}
+
+.submenu-1 li a {
+    color: #333;
+}
+
+.submenu-1 li a:hover {
+    color: #ff9900;
+}
+
+#content {
+    max-width: 800px;
+    margin: 80px auto 20px; /* Ajustamos el margen superior para dejar espacio para el menú */
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
